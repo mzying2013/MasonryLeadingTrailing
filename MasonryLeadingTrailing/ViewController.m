@@ -22,6 +22,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    /*
+     运行效果的前提
+     1. PROJECT -> MasonryLeadingTrailing -> Info -> Localizations；
+     2. 点击 “+”，添加 Arabic 语言；
+     3. Edit Scheme -> Options -> Application Language -> Arabic。
+    
+     在模拟器运行即可看到阿拉伯语言的效果，不需要在模拟器系统里面设置【语言与地区】为阿拉伯语。
+    */
+    
     [self.view addSubview:self.nameLabel];
     [self.view addSubview:self.lineView];
     [self.view addSubview:self.btn];
