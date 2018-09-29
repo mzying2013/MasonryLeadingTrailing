@@ -13,9 +13,13 @@
 		5AAED9D8215F226A005672D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AAED9D7215F226A005672D1 /* Assets.xcassets */; };
 		5AAED9DB215F226A005672D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AAED9D9215F226A005672D1 /* LaunchScreen.storyboard */; };
 		5AAED9DE215F226A005672D1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5AAED9DD215F226A005672D1 /* main.m */; };
+		CD842E4BC100B8E50DF2D68B /* libPods-MasonryLeadingTrailing.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ED7CCA4F295016DE9CAB0DFE /* libPods-MasonryLeadingTrailing.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C412FBD022AB72D8668825B /* Pods-MasonryLeadingTrailing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryLeadingTrailing.release.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryLeadingTrailing/Pods-MasonryLeadingTrailing.release.xcconfig"; sourceTree = "<group>"; };
+		5A497650215F541600E2A7BE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		5A497651215F541600E2A7BE /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5AAED9CB215F2269005672D1 /* MasonryLeadingTrailing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasonryLeadingTrailing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AAED9CE215F2269005672D1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5AAED9CF215F2269005672D1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +30,8 @@
 		5AAED9DA215F226A005672D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AAED9DC215F226A005672D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AAED9DD215F226A005672D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		682F5C004F3D3D30012EEB0A /* Pods-MasonryLeadingTrailing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryLeadingTrailing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryLeadingTrailing/Pods-MasonryLeadingTrailing.debug.xcconfig"; sourceTree = "<group>"; };
+		ED7CCA4F295016DE9CAB0DFE /* libPods-MasonryLeadingTrailing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryLeadingTrailing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD842E4BC100B8E50DF2D68B /* libPods-MasonryLeadingTrailing.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 			children = (
 				5AAED9CD215F2269005672D1 /* MasonryLeadingTrailing */,
 				5AAED9CC215F2269005672D1 /* Products */,
+				F40B82357093CEC8984648BE /* Pods */,
+				E630D088A27CE516132C6BA8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +80,23 @@
 			path = MasonryLeadingTrailing;
 			sourceTree = "<group>";
 		};
+		E630D088A27CE516132C6BA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED7CCA4F295016DE9CAB0DFE /* libPods-MasonryLeadingTrailing.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F40B82357093CEC8984648BE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				682F5C004F3D3D30012EEB0A /* Pods-MasonryLeadingTrailing.debug.xcconfig */,
+				1C412FBD022AB72D8668825B /* Pods-MasonryLeadingTrailing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5AAED9E1215F226A005672D1 /* Build configuration list for PBXNativeTarget "MasonryLeadingTrailing" */;
 			buildPhases = (
+				E2643483397F508F047D61BE /* [CP] Check Pods Manifest.lock */,
 				5AAED9C7215F2269005672D1 /* Sources */,
 				5AAED9C8215F2269005672D1 /* Frameworks */,
 				5AAED9C9215F2269005672D1 /* Resources */,
@@ -136,6 +163,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		E2643483397F508F047D61BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MasonryLeadingTrailing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5AAED9C7215F2269005672D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -154,6 +206,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5AAED9D5215F2269005672D1 /* Base */,
+				5A497650215F541600E2A7BE /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -162,6 +215,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5AAED9DA215F226A005672D1 /* Base */,
+				5A497651215F541600E2A7BE /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -173,6 +227,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -232,6 +287,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -283,32 +339,40 @@
 		};
 		5AAED9E2215F226A005672D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 682F5C004F3D3D30012EEB0A /* Pods-MasonryLeadingTrailing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MasonryLeadingTrailing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mzying.com.MasonryLeadingTrailing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		5AAED9E3215F226A005672D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C412FBD022AB72D8668825B /* Pods-MasonryLeadingTrailing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = MasonryLeadingTrailing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = mzying.com.MasonryLeadingTrailing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
