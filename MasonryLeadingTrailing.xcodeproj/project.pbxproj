@@ -30,6 +30,8 @@
 		5AAED9DA215F226A005672D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5AAED9DC215F226A005672D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AAED9DD215F226A005672D1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5AE73FD32160C9A400910297 /* he-IL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "he-IL"; path = "he-IL.lproj/Main.strings"; sourceTree = "<group>"; };
+		5AE73FD42160C9A400910297 /* he-IL */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "he-IL"; path = "he-IL.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		682F5C004F3D3D30012EEB0A /* Pods-MasonryLeadingTrailing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MasonryLeadingTrailing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MasonryLeadingTrailing/Pods-MasonryLeadingTrailing.debug.xcconfig"; sourceTree = "<group>"; };
 		ED7CCA4F295016DE9CAB0DFE /* libPods-MasonryLeadingTrailing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MasonryLeadingTrailing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -207,6 +209,7 @@
 			children = (
 				5AAED9D5215F2269005672D1 /* Base */,
 				5A497650215F541600E2A7BE /* ar */,
+				5AE73FD32160C9A400910297 /* he-IL */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -216,6 +219,7 @@
 			children = (
 				5AAED9DA215F226A005672D1 /* Base */,
 				5A497651215F541600E2A7BE /* ar */,
+				5AE73FD42160C9A400910297 /* he-IL */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
